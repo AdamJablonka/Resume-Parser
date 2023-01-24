@@ -9,7 +9,7 @@ const FileUpload = () => {
     }
 
     return(
-        <div className="pt-10 justify-center flex text-xl text-lg bg-green-200">
+        <div className="pt-10 justify-center flex text-xl text-lg bg-green-100">
             <p className="mr-10">Upload your resume here:</p>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input ref={register('resume', {})} type="file"/>

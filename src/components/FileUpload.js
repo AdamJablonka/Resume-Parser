@@ -1,7 +1,7 @@
 import React from 'react'
-import { useForm } from 'react-hook-form';
 import Navbar from './Navbar';
-import { useState } from 'react'
+import { useState } from 'react';
+const pdf = require('pdf-parse');
 
 const FileUpload = () => {
     // selectedFile contains information on the currently picked file.
@@ -22,12 +22,13 @@ const FileUpload = () => {
 
     function handleSubmission() {
         console.log("Submission has been made.");
+        console.log("You have clicked");
     }
 
     return(
         <div>
             <Navbar/>
-            <div className="pt-10 justify-center flex text-xl text-lg bg-green-100">
+            <div className="pt-10 justify-center flex text-xl text-lg">
                 <div className="mt-2">
                     <p className="mr-10">Upload your resume here:</p>
                     <div>

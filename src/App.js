@@ -1,6 +1,5 @@
 import './input.css';
 import Navbar from './components/Navbar'
-import FileUpload from './components/FileUpload'
 
 const App = () => {
   return (

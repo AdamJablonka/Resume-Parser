@@ -8,7 +8,7 @@ const Dashboard = () => {
     return(
         <div>
             <NavBar/>
-            <div className="m-2 flex flex-col">
+            <div className="flex flex-col">
                 <div id="content-bar" className="flex" className="mt-12">
                     <div id="search-bar" className="flex">
                     <p className="mr-1">Search:</p>
@@ -20,7 +20,6 @@ const Dashboard = () => {
                 </div>
             </div>
         </div>
-
     )
 }
 

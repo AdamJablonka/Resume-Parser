@@ -3,8 +3,22 @@
 // indexed view should represent name, number of matched keywords, diploma, show full resume button?
 // sort by date, relevance number at top
 import NavBar from './Navbar'
+import { useEffect, useState } from 'react';
 
 const Dashboard = () => {
+
+    const [backendData, setBackendData] = useState([{}]);
+
+    useEffect(() => {
+        fetch("/api").then(
+          response => response.json()
+        ).then( data => {
+          setBackendData(data);
+          console.log(data)
+        }
+        )
+      }, []);
+
     return(
         <div>
             <NavBar/>

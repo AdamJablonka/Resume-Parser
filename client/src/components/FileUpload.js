@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const FileUpload = () => {
     // selectedFile contains information on the currently picked file.
